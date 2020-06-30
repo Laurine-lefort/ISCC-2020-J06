@@ -1,16 +1,19 @@
 <?php
-function affichertitre($nomproduit) {
-    echo"<h1>Fiche produit: $nomproduit </h1>";
-} affichertitre('T-shirt femme');
+function afficher_titre($nom_produit) {
+    echo"<h1>Fiche produit: $nom_produit </h1>";
+return;
+}
 
-function afficherdescritpion($couleur,$prix) {
+function afficher_descritpion($couleur,$prix) {
     echo"<p>Couleur: $couleur, Prix: $prix</p>";
-} afficherdescritpion('Rouge','15.50');
+return;
+}
 
-function afficherproduit($nomproduit,$couleur,$prix,$disponible){
+function afficher_produit($nom_produit,$couleur,$prix,$disponible){
     if ($disponible==true)
-affichertitre() and afficherdescritpion();
+afficher_titre($nom_produit) and afficher_descritpion($couleur, $prix);
 else
-echo"<p>le produit $nomproduit n'est malhreusement plus disponible</p>";
-} afficherproduit('T-shirt femme', 'Rouge' , '15.50' , 'true')
+echo"<p>le produit $nom_produit n'est malhreusement plus disponible</p>";
+return;
+}
 ?>

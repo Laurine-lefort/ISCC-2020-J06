@@ -9,7 +9,7 @@
   $nom_produit='T-shirt femme';
   $couleur='Rouge';
   $prix=15.50;
-  $disponible=false;
+  $disponible=true;
   $quantité=10;
   afficher_titre($nom_produit);
   afficher_descritpion($couleur,$prix);

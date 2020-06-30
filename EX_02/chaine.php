@@ -9,4 +9,15 @@ echo"<p>La chaine str1 contient $nombre_mots_str1 mots</p>";
 $minuscule=strtolower($str1);
 echo"<p>$minuscule</p>";
 
+$majuscule=strtoupper($str1);
+echo"<p>$majuscule</p>";
+
+$melanger=str_shuffle($str1);
+echo"<p>$melanger</p>";
+
+$replace=str_replace("la","LA",$str1);
+echo"<p>$replace</p>";
+
+$supprimer=substr($str1,0,129);
+echo"<p>$supprimer</p>";
 ?>

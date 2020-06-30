@@ -4,16 +4,25 @@
 
 function compter($maximum)
 {
-    while($maximum) {
-        $maximum=$maximum + 1;
+    $compteur=1;
+    while($compteur <= $maximum) {
+        echo $compteur;
+        $compteur=$compteur + 1;
+        echo"<br>";
     }
-    echo"$maximum";
     return;
 }
 compter(10);
-function compter_for()
+
+function compter_for($maximum)
 {
-    echo"";
+    for($compteur=1; $compteur<=10;)
+    {
+        echo $compteur;
+        $compteur=$compteur+ 1;
+        echo "<br>";
+    }
     return;
 }
+compter_for(10);
 ?>

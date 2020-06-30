@@ -6,13 +6,15 @@
 <body>
 <?php
     include("affichage.php");
+    include("gestion-produit.php");
   $nom_produit='T-shirt femme';
   $couleur='Rouge';
   $prix=15.50;
   $disponible=true;
   $quantité=10;
-  
+
   afficher_produit($nom_produit,$couleur,$prix,$disponible);
+  
   ?>
 
   </body>

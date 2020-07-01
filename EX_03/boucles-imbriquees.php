@@ -2,8 +2,17 @@
 
 <?php
 function clock()
-for($compteur=00; $compteur<=59; $compteur++)
 {
+for($a=00; $a<=23; $a++)
+{
+for ($b=00;$b<60;$b++)
+{
+    echo"$a:$b <br>";
+}
+echo "<br>";
+
+}
 return;
 }
+clock()
 ?>

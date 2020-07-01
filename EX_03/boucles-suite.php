@@ -4,13 +4,11 @@
 
 function compter_dizaine($maximum)
 {
-    $compteur=0;
-    while($compteur <= $maximum) {
-
-        $compteur=$compteur + 1;
-        
+    $compteur=1;
+    while($compteur < $maximum) {
         echo"<p>Compteur: $compteur</p>";
-
+        $compteur=$compteur + 1;
+    
     if (!($compteur%100))
     {
         echo 'Ceci est une centaine';
